@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready (function() {
+setTimeout(function(){ 
+	$("#kotak").fadeOut("slow",function(){ // Mengeksekusi kotak dengan efek fade lambat
+	$("#kotak").remove(); // Menghilangkan kotak
+});
+},3000);
+});
+</script>s
+<style type="text/css">
+	#kotak {
+		width : 300px;
+		height: 60px;
+		background: lightyellow;
+		border: 1px solid black;
+		padding: 5px;
+	}
+</style>
+</head>
+<body>
+	<h3 id="kotak">lihatlah dengan seksama,Teks Ini Akan Hilang dalam Hitungan Detik 1...2...3...</h3>

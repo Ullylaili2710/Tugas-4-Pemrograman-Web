@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+<script type="text/javascript" src="jquery-3.6.0.min.js">// Memanggil library jquery</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#box1").dblclick(function() { // Elemen pada box 1 yang akan dieksekusi
+			$(".satu").css({ // Elemen selector class "satu"
+				'background-color' :'red' // Warna yang akan muncul setelah di double klik adalah merah
+			});
+		});
+	    $("#box2").dblclick(function() { // Elemen pada box 2 yang akan dieksekusi
+			$(".dua").css({ // Elemen selector class "dua"
+				'background-color' :'khaki' // Warna yang akan muncul setelah di double klik adalah khaki
+			});
+		});
+		$("#box3").dblclick(function() { // Elemen pada box 3 yang akan dieksekusi
+			$(".tiga").css({ // Elemen selector class "tiga"
+				'background-color' :'blue' // Warna yang akan muncul setelah di double klik adalah biru
+			});
+		});
+		$("#box4").dblclick(function() { // Elemen pada box 4 yang akan dieksekusi
+			$(".empat").css({ // Elemen selector class "empat"
+				'background-color' :'pink' // Warna yang akan muncul setelah di double klik adalah pink
+			});
+		});
+	});
+</script>
+<style>
+	div{
+		width: 100px;
+		height: 100px;
+		border-style: black;
+		border-color: rgb(255, 166, 0);
+		background-color: rgb(255, 196, 0);
+		margin-left: 15px;
+		float: left;
+	}
+	.satu{
+		border-radius: 0px;
+	}
+	.dua{
+		border-radius: 0px;
+	}
+	.tiga{
+		border-radius: 0px;
+	}
+	.empat{
+		border-radius: 0px;
+	}
+</style>
+</head>
+<body>
+	<p>Klik 2x pada setiap kotak untuk mengubah warnanya</p>
+    <div id= "box1" class="satu"></div>
+    <div id= "box2" class="dua"></div>
+    <div id= "box3" class="tiga"></div>
+    <div id= "box4" class="empat"></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".sembunyi").click(function(){$("#foto").hide("slow")}); // untuk menyembunyikan foto secara perlahan //
+$(".tampil").click(function(){$("#foto").show("slow")}); // untuk menunjukkan foto secara perlahan //
+$(".sembunyi1").click(function(){$("#foto1").hide("slow")}); // untuk menyembukan foto 1 secara perlahan //
+$(".tampil1").click(function(){$("#foto1").show("slow")}); // untuk menampilkan foto 1 secara perlahan // 
+});
+</script>
+</head>
+<body>
+<button class="sembunyi">sembunyikan</button>
+<button class="tampil">tampilkan</button>
+<p><img id="foto" src="foto1.png"></p>
+<br/>
+<button class="sembunyi1">sembunyikan</button>
+<button class="tampil1">tampilkan</button>
+<p><img id="foto1" src="foto2.jpg"></p>
+</body>
+</html>

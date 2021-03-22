@@ -1,0 +1,16 @@
+<html>
+<head>
+	<script src="jquery-3.6.0.min.js">// Memanggil library jquery</script> 
+	<script type="text/javascript"> 
+		$(document).ready (function(){ 
+		$(".sembunyi").click(function() {$("#foto").hide("slow") }); // Memberi perintah "sembunyi" pada foto secara pelan
+		$(".tampil").click(function() {$("#foto").hide("slow") }); // Memberi perintah "tampilkan" pada foto secara pelan
+	});
+	</script>
+</head>
+<body>
+      <button class="sembunyi">sembunyikan</button> 
+      <button class="tampil">tampilkan</button>
+      <p><img id="foto" src="foto1.png"/p></p>
+</body>
+</html>

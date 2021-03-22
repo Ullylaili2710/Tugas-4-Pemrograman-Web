@@ -1,0 +1,38 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"> // Memanggil library jquery</script>
+    <script>
+        $(document).ready(function() {
+            $("#tombol_fade_out").click(function() { // Elemen pada tombol fade out yang akan dieksekusi
+                $("#box").fadeOut("slow"); // Membuat elemen yang berupa kotak dan memberi perintah fade out (menghilang) secara perlahan
+        })
+            $("#tombol_fade_in").click(function() { // Elemen pada tombol fade in yang akan dieksekusi
+                $("#box").fadeIn("fast"); // Membuat elemen yang berupa kotak dan memberi perintah fade in (menampilkan) secara cepat
+        })
+            $("#tombol_fade_to").click(function() { // Elemen pada tombol fade to yang akan dieksekusi
+                $("#box").fadeTo("slow", 0.3); // Membuat elemen yang berupa kotak dan memberi perintah fade to (transparan) secara perlahan dalam 0.3 detik
+        })
+        });
+        
+    
+    </script>
+    <style type="text/css">
+        #box {
+            width: 120px;
+            height: 80px;
+            background-color: yellow;
+            border: 1px solid black;
+        }
+    </style>
+    </head>
+    <body>
+    <h2>Efek Fade</h2>
+    <button id="tombol_fade_out">Fade Out</button>
+    <button id="tombol_fade_in">Fade In</button>
+    <button id="tombol_fade_to">Fade To 0.3s</button>
+    <br><br>
+    <div id="box"></div>
+    </body>
+    </html>
+    
